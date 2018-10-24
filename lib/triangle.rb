@@ -8,10 +8,10 @@ class Triangle
   
   def kind 
     is_valid? 
-    if @a == @side_two && @side_two == @side_three && @side_three == @side_one
+    if @a == @b && @b == @c && @c == @a
       :equilateral
     elsif
-      @side_one != @side_two && @side_two != @side_three && @side_three != @side_one 
+      @a != @b && @b != @c && @c != @a 
       :scalene
     else 
       :isosceles
@@ -19,7 +19,7 @@ class Triangle
   end
   
   def is_valid?
-    if @side_one + @side_two <= @side_three || @side_two + @side_three <= @side_one || @side_three + @side_one <= @side_two
+    if @a + @b <= @c || @b + @c <= @a || @c + @a <= @b
       raise TriangleError
     end
   end
