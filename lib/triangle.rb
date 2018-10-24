@@ -1,6 +1,6 @@
 class Triangle
   
-  def initialize(a, b, side_three)
+  def initialize(a, b, c)
     @side_one = side_one
     @side_two = side_two
     @side_three = side_three
