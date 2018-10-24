@@ -8,7 +8,7 @@ class Triangle
   
   def kind 
     is_valid? 
-    if @a == @b && @b == @c && @c == @a
+    if @a == @b && @b == @c 
       :equilateral
     elsif
       @a != @b && @b != @c && @c != @a 
