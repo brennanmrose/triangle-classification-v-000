@@ -1,14 +1,14 @@
 class Triangle
   
   def initialize(a, b, c)
-    @side_one = side_one
-    @side_two = side_two
-    @side_three = side_three
+    @a = a
+    @b = b
+    @c = c
   end 
   
   def kind 
     is_valid? 
-    if @side_one == @side_two && @side_two == @side_three && @side_three == @side_one
+    if @a == @side_two && @side_two == @side_three && @side_three == @side_one
       :equilateral
     elsif
       @side_one != @side_two && @side_two != @side_three && @side_three != @side_one 
